@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Golang Nicaragua</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <img style="width: 75px" src="https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_White.svg" alt="Golang Logo">
+        <h1>Happy Golang Nicaragua</h1>
+        <nav>
+            <ul>
+                <li><a href="#motivo">Motivo</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#ejemplos">Ejemplos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2>Construye sistemas simples, seguros y escalables con Go</h2>
+                <ul>
+                    <li>Un lenguaje de programación de código abierto apoyado por Google</li>
+                    <li>Fácil de aprender y genial para equipos</li>
+                    <li>Concurrencia integrada y una robusta biblioteca estándar</li>
+                    <li>Amplio ecosistema de socios, comunidades y herramientas</li>
+                </ul>
+                <div class="hero-buttons">
+                    <a href="#recursos" class="button button-primary">Empezar</a>
+                    <a href="https://golang.org/dl/" class="button">Descargar</a>
+                </div>
+                <p>Descargar paquetes para <a href="https://golang.org/dl/#go1.18.1.windows-amd64" target="_blank">Windows 64-bit</a>, <a href="https://golang.org/dl/#go1.18.1.darwin-amd64" target="_blank">macOS</a>, <a href="https://golang.org/dl/#go1.18.1.linux-amd64" target="_blank">Linux</a> y más</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://go.dev/images/gophers/ladder.svg" alt="Golang Mascot">
+            </div>
+        </div>
+    </section>
+    <section id="motivo">
+        <div class="container">
+            <h2>¿Por qué una comunidad de Golang en Nicaragua?</h2>
+            <p>
+                La comunidad Happy Golang Nicaragua nace con el objetivo de fomentar el aprendizaje y uso del lenguaje de programación Go en nuestro país.
+                Queremos crear un espacio donde tanto desarrolladores principiantes como expertos puedan compartir conocimientos, colaborar en proyectos y
+                crecer profesionalmente en el mundo de la programación.
+            </p>
+        </div>
+    </section>
+    <section id="recursos">
+        <div class="container">
+            <h2>Recursos Oficiales</h2>
+            <p>Visita los sitios oficiales para más información y recursos:</p>
+            <ul>
+                <li><a href="https://golang.org" target="_blank">Sitio Oficial de Golang</a></li>
+                <li><a href="https://blog.golang.org" target="_blank">Blog Oficial de Golang</a></li>
+                <li><a href="https://golang.org/doc/" target="_blank">Documentación Oficial de Golang</a></li>
+            </ul>
+            <img style="width: 150px" src="https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_LightBlue.svg" alt="Golang Logo">
+        </div>
+    </section>
+    <section id="ejemplos">
+        <div class="container">
+            <h2>Ejemplos de Código en Go</h2>
+            <pre><code class="language-go">
+                // Hola Mundo en Go
+                package main
+
+                import "fmt"
+
+                func main() {
+                    fmt.Println("Hola, Mundo!")
+                }
+                </code></pre>
+            <p>Para empezar con Go, necesitas instalar el compilador desde el sitio oficial y seguir la documentación para configurar tu entorno de desarrollo.</p>
+        </div>
+    </section>
+
+    <section>
+        <div id="api-results" class="api-results container shadow p-3 mb-5 bg-body-tertiary rounded">
+            <h2>Últimos artículos de Medium</h2>
+            Cargando artículos...
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>Creador de la comunidad: JC Developer Nicaragua</p>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-go.min.js"></script>
+<!-- Incluir el JavaScript de Highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+<!-- Inicializar Highlight.js -->
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+    });
+</script>
+
+<script src="index.js"></script>
+
+</body>
+</html>
